@@ -298,17 +298,33 @@ header{
     grid-column: 1/2;
     grid-row: 1/2;
 }
+.fixture__uno:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 0.5s;
+}
 .fixture__dos{
     grid-column: 1/2;
     grid-row: 2/3;
+}
+.fixture__dos:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 0.5s;
 }
 .fixture__tres{
     grid-column: 3/4;
     grid-row: 1/2;
 }
+.fixture__tres:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 0.5s;
+}
 .fixture__cuatro{
     grid-column: 3/4;
     grid-row: 2/3;
+}
+.fixture__cuatro:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 0.5s;
 }
 .fixture__principal{
     width: 950px;
