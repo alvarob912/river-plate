@@ -19,7 +19,7 @@ p{
     padding: 0 16px;
 }
 header{
-    background-color: rgb(113, 20, 20);
+    background-color: rgb(130, 25, 25);
     position: sticky;
     top: 0px;
 }
@@ -35,7 +35,6 @@ header{
 }
 .header__item{
     padding: 15px;
-    
 }
 .header__item a{
     color: black;
