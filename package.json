@@ -1,0 +1,23 @@
+{
+  "name": "alvarobijarra-aplicandogrid-fullresponsive",
+  "version": "1.0.0",
+  "description": "<h1>River Plate</h1>\r <p>Este sitio es para el Club Atletico River Plate</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarob912/river-plate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarob912/river-plate/issues"
+  },
+  "homepage": "https://github.com/alvarob912/river-plate#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
