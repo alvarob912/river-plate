@@ -398,6 +398,8 @@ header {
     flex-direction: column; }
   .header__item a {
     font-size: 15px; }
+  .header__imagen--logo {
+    width: 90px; }
   .principal {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
@@ -438,7 +440,7 @@ header {
     top: 133%;
     font-size: 18px; }
   .principal__letra {
-    font-size: 10px; }
+    font-size: 13px; }
   .partidos {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr; }
@@ -530,7 +532,8 @@ header {
     height: 250px; }
   .fixture__copa {
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .fixture__copa--imagen {
     width: 320px;
     padding: 0px; }
@@ -565,7 +568,13 @@ header {
     justify-content: center; }
   .historia__tamano {
     width: 320px;
-    height: 300px; } }
+    height: 300px; }
+  .footer__imagen--redes {
+    width: 12px; }
+  .footer__letra {
+    font-size: 10px; }
+  .footer__condiciones {
+    flex-wrap: wrap; } }
 
 /* MEDIA QUERIE DE TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -577,6 +586,8 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start; }
+  .header__imagen--logo {
+    width: 100px; }
   .principal {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.5fr 1fr;
@@ -678,6 +689,7 @@ header {
     height: 400px; }
   .fixture__copa {
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center; }
   .fixture__copa--imagen {
     width: 600px;
@@ -710,4 +722,10 @@ header {
     justify-content: center; }
   .historia__tamano {
     width: 350px;
-    height: 300px; } }
+    height: 300px; }
+  .footer__imagen--redes {
+    width: 14px; }
+  .footer__letra {
+    font-size: 12px; }
+  .footer__condiciones {
+    flex-wrap: wrap; } }

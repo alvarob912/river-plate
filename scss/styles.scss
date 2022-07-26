@@ -201,8 +201,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
 }
+
 .libertadores__imagen{
     padding: 80px;
 }
@@ -411,7 +411,11 @@ p{
     flex-direction: column;
 }
 .header__item a{
-    font-size: 15px;}
+    font-size: 15px;
+}
+.header__imagen--logo{
+    width: 90px;
+}
 .principal{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
@@ -469,7 +473,7 @@ p{
     font-size: 18px;
 }
 .principal__letra{
-    font-size: 10px;
+    font-size: 13px;
 }
 .partidos {
     grid-template-columns: 1fr;
@@ -594,6 +598,7 @@ p{
 .fixture__copa{
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 .fixture__copa--imagen{
     width: 320px;
@@ -643,6 +648,15 @@ p{
     width: 320px;
     height: 300px;
 }
+.footer__imagen--redes{
+    width: 12px;
+}
+.footer__letra{
+    font-size: 10px;
+}
+.footer__condiciones{
+    flex-wrap: wrap;
+}
 }
 /* MEDIA QUERIE DE TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -656,6 +670,9 @@ p{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: start;
+    }
+    .header__imagen--logo{
+        width: 100px;
     }
     .principal{
         grid-template-columns: repeat(3, 1fr);
@@ -793,6 +810,7 @@ p{
     }
     .fixture__copa{
         flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
     }
     .fixture__copa--imagen{
@@ -837,5 +855,14 @@ p{
 .historia__tamano{
     width: 350px;
     height: 300px;
+}
+.footer__imagen--redes{
+    width: 14px;
+}
+.footer__letra{
+    font-size: 12px;
+}
+.footer__condiciones{
+    flex-wrap: wrap;
 }
 }
