@@ -339,6 +339,7 @@ header {
 /* PLANTEL */
 .plantel {
   display: flex;
+  justify-content: center;
   padding: 20px; }
 
 .plantel__imagen {
@@ -459,7 +460,7 @@ header {
     align-items: center; }
   .secundario__imagen {
     width: 300px;
-    height: 250px; }
+    height: 150px; }
   .secundario__texto {
     font-size: 10px; }
   .secundario__titulo {
@@ -525,13 +526,13 @@ header {
     grid-column: 1/2;
     grid-row: 5/6; }
   .fixture__principal {
-    width: 380px;
+    width: 320px;
     height: 250px; }
   .fixture__copa {
     flex-wrap: wrap;
     align-items: center; }
   .fixture__copa--imagen {
-    width: 370px;
+    width: 320px;
     padding: 0px; }
   .fixture__copa--texto {
     padding: 0px; }
@@ -563,7 +564,7 @@ header {
     flex-wrap: wrap-reverse;
     justify-content: center; }
   .historia__tamano {
-    width: 350px;
+    width: 320px;
     height: 300px; } }
 
 /* MEDIA QUERIE DE TABLET */
@@ -615,7 +616,8 @@ header {
     grid-row: 3/4; }
   .secundario {
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   /* LIBERTADORES */
   .libertadores {
     height: auto;
@@ -650,8 +652,9 @@ header {
     height: 300px; }
   /* FIXTURE */
   .fixture__liga {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px; }
   .fixture__principal {
     grid-column: 1/3;
     grid-row: 1/2; }
@@ -667,14 +670,17 @@ header {
   .fixture__cuatro {
     grid-column: 2/3;
     grid-row: 3/4; }
+  .borde {
+    border: gray solid 1px;
+    padding: 0px; }
   .fixture__principal {
-    width: 680px;
+    width: 600px;
     height: 400px; }
   .fixture__copa {
     flex-wrap: wrap;
     align-items: center; }
   .fixture__copa--imagen {
-    width: 680px;
+    width: 600px;
     padding: 0px; }
   .fixture__copa--texto {
     padding: 0px; }
