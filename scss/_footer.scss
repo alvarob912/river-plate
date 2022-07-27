@@ -1,0 +1,21 @@
+/* FOOTER */
+.footer{
+    &__imagen{
+        display: flex;
+        justify-content: flex-end;
+        &--redes{
+            width: 20px;
+            margin:  5px;
+        }}
+    &__condiciones{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__letra{
+        font-size: 13px;
+    }
+    &__imagen--logo{
+        width: 120px;
+    }
+}

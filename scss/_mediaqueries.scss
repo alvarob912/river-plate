@@ -1,0 +1,482 @@
+/*MEDIA DE CELULAR */ 
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+    header {
+        background-color: rgb(113, 20, 20);
+        position: static;
+        height: auto;
+        width: auto;
+        .header{
+            &__imagen--logo{
+                width: 90px;
+            }
+        }
+    }
+    h1{
+        font-size: 20px;
+    }   
+    p{
+        font-size: 15px;
+    }
+    body{
+        height: auto;
+    }
+    .principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
+        grid-template-areas: "enzo" 
+                            "texto" 
+                            "julian" 
+                            "borja" 
+                            "suarez";
+            .enzo{
+                background-position: top;
+            }
+            .julian{
+                background-position: top;
+            }
+            .borja{
+                background-position: top;
+            }
+            .suarez{
+                background-position: top;
+            }
+            
+            &__imagen--primera{
+                width: auto;
+                height: 180px;
+            }
+            &__imagen--baja{
+                width: auto;
+                height: 150px;
+            }
+            &__imagen{
+                width: auto;
+                height: 250px;
+            }
+            &__titulo{
+                top: 37%;
+                font-size: 20px;
+            }
+            &__titulo--dos{
+                background-color: transparent;
+                position: sticky;
+                top: 75%;
+                font-size: 18px;
+            }
+            &__titulo--tres{
+                background-color: transparent;
+                position: sticky;
+                top: 85%;
+                font-size: 18px;
+            }
+            &__titulo--cuatro{
+                background-color: transparent;
+                position: sticky;
+                top: 133%;
+                font-size: 18px;
+            }
+            &__letra{
+                font-size: 13px;
+            }
+    }
+    .partidos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        &__imagen--uno{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            }
+        &__imagen--dos{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            }
+        &__imagen--tres{
+            grid-column: 1/2;
+            grid-row: 3/4;
+            }
+        }
+    .secundario{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__imagen{
+            width: 300px;
+            height: 150px;
+        }
+        &__texto{
+            font-size: 10px;
+        }
+        &__titulo{
+            font-size: 25px;
+        }
+        }
+    .footer__condiciones{
+        align-items: center;
+        flex-wrap: wrap;}
+    
+    /* LIBERTADORES */
+    .libertadores{
+        height: 70vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "river" 
+                            "mano-suarez" 
+                            "arbitro";
+            .river{
+                background-position: top;
+            }
+            .mano-suarez{
+                background-position: top;
+            }
+            .arbitro{
+                background-position: top;
+            }
+            &__imagen{
+                width: auto;
+                height: auto;
+            }
+            &__imagen--chica{
+                width: auto;
+                height: auto;
+            }
+            &__titulo{
+                position: relative;
+                background-color: transparent;
+                font-size: 20px;
+                top: 4%;
+            }
+            &__titulo--dos{
+                position: relative;
+                background-color: transparent;
+                font-size: 15px;
+                top: 4%;
+            }
+            &__titulo--tres{
+                position: relative;
+                background-color: transparent;
+                font-size: 15px;
+                top: 4%;
+            }
+    }
+
+    .cruces{
+        flex-wrap: wrap;
+        align-items: center;
+        &__imagen{
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+        }
+    }
+    
+    /* FIXTURE */
+    .fixture{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        &__principal{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &__uno{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        &__dos{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        &__tres{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        &__cuatro{
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        &__principal{
+            width: 330px;
+            height: 300px;
+        }
+    }
+
+    .fixture__copa{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        &--imagen{
+            width: 320px;
+            padding: 0px;
+        }
+        &--texto{
+            padding: 0px;
+        }
+        
+    }
+
+    
+    /* PLANTEL */
+    .plantel{
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        &__imagen{
+            width: 400px;
+            height: auto;
+        }
+    }
+    /* HISTORIA */
+    .historia{
+        font-size: 14px;
+        &__uno{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__dos{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+        &__tres{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__cuatro{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+        &__tamano{
+            width: 320px;
+            height: 300px;
+        }
+    }
+    .footer{
+        &__imagen--redes{
+            width: 12px;
+        }
+        &__letra{
+            font-size: 10px;
+        }
+        &__condiciones{
+            flex-wrap: wrap;
+        }
+        &__letra{
+            font-size: 11px;
+        }
+        &__imagen--logo{
+            width: 80px;
+        }
+    }
+    }
+    /* MEDIA QUERIE DE TABLET */
+    @media (min-width: 576px) and (max-width: 992px) {
+        header {
+            height: auto;
+            .header{
+                &__imagen--logo{
+                    width: 100px;
+                }
+            }
+    }
+        .principal{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 0.5fr 1fr;
+            grid-template-areas: "enzo enzo enzo" 
+                                "texto texto texto"
+                                "julian borja suarez";
+                &__imagen--primera{
+                    width: auto;
+                    height: auto;
+                }
+                &__imagen--baja{
+                    width: auto;
+                    height: auto;
+                }
+                &__imagen{
+                    width: auto;
+                    height: auto;
+                }
+                &__titulo{
+                    top: 45%;
+                    font-size: 30px;
+                }
+                &__titulo--dos{
+                    top: 106%;
+                    font-size: 20px;
+                }
+                &__titulo--tres{
+                    top: 106%;
+                    font-size: 20px;
+                }
+                &__titulo--cuatro{
+                    top: 106%;
+                    font-size: 18px;
+                }
+        }
+        .partidos {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+            &__imagen--uno{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                }
+            &__imagen--dos{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                }
+            &__imagen--tres{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                }
+            }
+        
+        .secundario{
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            }
+        /* LIBERTADORES */  
+        .libertadores{
+            height: 50vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas: "river river" 
+                                "mano-suarez arbitro" ;
+            .river{
+                background-position: top;
+            }
+            .mano-suarez{
+                background-position: top;
+            }
+            .arbitro{
+                background-position: top;
+            }
+            &__imagen{
+                width: auto;
+                height: auto;
+            }
+            &__imagen--chica{
+                width: auto;
+                height: auto;
+            }
+            &__titulo{
+                position: relative;
+                background-color: transparent;
+                font-size: 25px;
+                top: 4%;
+            }
+            &__titulo--dos{
+                position: relative;
+                background-color: transparent;
+                font-size: 20px;
+                top: 4%;
+            }
+            &__titulo--tres{
+                position: relative;
+                background-color: transparent;
+                font-size: 20px;
+                top: 4%;
+            }
+        }
+        .cruces{
+            display: block;
+            &__imagen{
+                width: 600px;
+                height: 400px;
+            }
+        }
+        /* FIXTURE */
+        .fixture{
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            &__principal{
+                grid-column: 1/3;
+                grid-row: 1/2;
+            }
+            &__uno{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            &__dos{
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            &__tres{
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            &__cuatro{
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+            &_borde{
+                border: gray solid 1px;
+                padding: 0px;}
+            &__principal{
+                width: 600px;
+                height: 400px;
+            }
+        }
+        .fixture__copa{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            &--imagen{
+                width: 600px;
+                padding: 0px;
+            }
+            &--texto{
+                padding: 0px;
+            }
+        }
+    /* PLANTEL */
+    .plantel{
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        &__imagen{
+            width: 550px;
+            height: auto;
+        }
+    }
+    /* HISTORIA */
+    .historia{
+        font-size: 13px;
+        &__uno{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__dos{
+            justify-content: center;
+        }
+        &__tres{
+            justify-content: center;
+        }
+        &__cuatro{
+            justify-content: center;
+        }
+        &__tamano{
+            width: 350px;
+            height: 300px;
+        }
+    }
+    .footer{
+        &__imagen--redes{
+            width: 14px;
+        }
+        &__letra{
+            font-size: 12px;
+        }
+        &__condiciones{
+            flex-wrap: wrap;
+        }
+        &__letra{
+            font-size: 12px;
+        }
+        &__imagen--logo{
+            width: 90px;
+        }
+    }
+
+    }
