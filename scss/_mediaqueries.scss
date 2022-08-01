@@ -5,7 +5,6 @@
     header {
         background-color: rgb(113, 20, 20);
         position: static;
-        height: auto;
         width: auto;
         .header{
             &__imagen--logo{
@@ -23,6 +22,8 @@
         height: auto;
     }
     .principal{
+        height: auto;
+        gap: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
         grid-template-areas: "enzo" 
@@ -56,7 +57,9 @@
                 height: 250px;
             }
             &__titulo{
-                top: 37%;
+                background-color: transparent;
+                position: sticky;
+                top: 5%;
                 font-size: 20px;
             }
             &__titulo--dos{
@@ -82,8 +85,11 @@
             }
     }
     .partidos {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.5fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
         &__imagen--uno{
             grid-column: 1/2;
             grid-row: 1/2;
@@ -96,21 +102,22 @@
             grid-column: 1/2;
             grid-row: 3/4;
             }
+        &__borde{
+        border: gray solid 2px;
+        padding: 6px;
         }
-    .secundario{
+        }
+    .secundario {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        &__imagen{
+        align-items: center; 
+        &__imagen {
             width: 300px;
-            height: 150px;
-        }
-        &__texto{
-            font-size: 10px;
-        }
-        &__titulo{
-            font-size: 25px;
-        }
+            height: 150px; }
+        &__texto {
+            font-size: 10px; }
+        &__titulo {
+            font-size: 25px; }
         }
     .footer__condiciones{
         align-items: center;

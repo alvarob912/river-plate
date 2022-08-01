@@ -118,7 +118,7 @@ header {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr;
   grid-template-rows: 1fr;
-  gap: 10px;
+  gap: 20px;
   margin: 30px; }
   .partidos__tamano {
     width: 300px; }
@@ -126,19 +126,19 @@ header {
     grid-column: 1/2;
     grid-row: 1/2; }
     .partidos__imagen--uno:hover {
-      transform: scale(1.15, 1.15);
+      transform: scale(1.05, 1.05);
       transition: all 0.5s; }
   .partidos__imagen--dos {
     grid-column: 2/3;
     grid-row: 1/2; }
     .partidos__imagen--dos:hover {
-      transform: scale(1.15, 1.15);
+      transform: scale(1.05, 1.05);
       transition: all 0.5s; }
   .partidos__imagen--tres {
     grid-column: 3/4;
     grid-row: 1/2; }
     .partidos__imagen--tres:hover {
-      transform: scale(1.15, 1.15);
+      transform: scale(1.05, 1.05);
       transition: all 0.5s; }
   .partidos__borde {
     display: flex;
@@ -229,27 +229,15 @@ header {
   .fixture__uno {
     grid-column: 1/2;
     grid-row: 1/2; }
-    .fixture__uno:hover {
-      transform: scale(1.15, 1.15);
-      transition: all 0.5s; }
   .fixture__dos {
     grid-column: 1/2;
     grid-row: 2/3; }
-    .fixture__dos:hover {
-      transform: scale(1.15, 1.15);
-      transition: all 0.5s; }
   .fixture__tres {
     grid-column: 3/4;
     grid-row: 1/2; }
-    .fixture__tres:hover {
-      transform: scale(1.15, 1.15);
-      transition: all 0.5s; }
   .fixture__cuatro {
     grid-column: 3/4;
     grid-row: 2/3; }
-    .fixture__cuatro:hover {
-      transform: scale(1.15, 1.15);
-      transition: all 0.5s; }
   .fixture__principal {
     width: 950px;
     height: 600px; }
@@ -309,7 +297,6 @@ header {
   header {
     background-color: #711414;
     position: static;
-    height: auto;
     width: auto; }
     header .header__imagen--logo {
       width: 90px; }
@@ -320,6 +307,8 @@ header {
   body {
     height: auto; }
   .principal {
+    height: auto;
+    gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
     grid-template-areas: "enzo"  "texto"  "julian"  "borja"  "suarez"; }
@@ -341,7 +330,9 @@ header {
       width: auto;
       height: 250px; }
     .principal__titulo {
-      top: 37%;
+      background-color: transparent;
+      position: sticky;
+      top: 5%;
       font-size: 20px; }
     .principal__titulo--dos {
       background-color: transparent;
@@ -361,8 +352,11 @@ header {
     .principal__letra {
       font-size: 13px; }
   .partidos {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr; }
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; }
     .partidos__imagen--uno {
       grid-column: 1/2;
       grid-row: 1/2; }
@@ -372,6 +366,9 @@ header {
     .partidos__imagen--tres {
       grid-column: 1/2;
       grid-row: 3/4; }
+    .partidos__borde {
+      border: gray solid 2px;
+      padding: 6px; }
   .secundario {
     flex-direction: column;
     justify-content: center;
