@@ -194,24 +194,24 @@ header {
     width: auto;
     height: auto; }
   .libertadores__titulo {
-    position: absolute;
+    position: relative;
+    background-color: transparent;
     color: white;
     font-size: 60px;
-    top: 66%;
-    left: 0px;
-    background-color: #3d3d3d; }
+    top: 1%;
+    left: 10%; }
   .libertadores__titulo--dos {
-    position: absolute;
+    position: relative;
+    background-color: transparent;
     color: white;
     font-size: 30px;
-    top: 42%;
-    background-color: #3d3d3d; }
+    top: 5%; }
   .libertadores__titulo--tres {
-    position: absolute;
+    position: relative;
+    background-color: transparent;
     color: white;
     font-size: 30px;
-    top: 75%;
-    background-color: #3d3d3d; }
+    top: 5%; }
 
 .cruces {
   display: flex; }
@@ -261,7 +261,8 @@ header {
     border: gray solid 2px;
     padding: 16px; }
   .fixture__liga {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
 
 .fixture__copa {
   display: flex; }
@@ -341,25 +342,26 @@ header {
       width: auto;
       height: 280px; }
     .principal__titulo {
+      position: relative;
       background-color: transparent;
-      position: sticky;
       top: 5%;
-      font-size: 20px; }
+      left: 8%;
+      font-size: 25px; }
     .principal__titulo--dos {
       background-color: transparent;
-      position: sticky;
-      top: 75%;
-      font-size: 18px; }
+      position: relative;
+      top: 10%;
+      font-size: 20px; }
     .principal__titulo--tres {
       background-color: transparent;
-      position: sticky;
-      top: 85%;
-      font-size: 18px; }
+      position: relative;
+      top: 10%;
+      font-size: 20px; }
     .principal__titulo--cuatro {
       background-color: transparent;
-      position: sticky;
-      top: 133%;
-      font-size: 18px; }
+      position: relative;
+      top: 10%;
+      font-size: 20px; }
     .principal__letra {
       font-size: 13px; }
   .partidos {
@@ -417,7 +419,8 @@ header {
       position: relative;
       background-color: transparent;
       font-size: 20px;
-      top: 4%; }
+      top: 4%;
+      left: 0%; }
     .libertadores__titulo--dos {
       position: relative;
       background-color: transparent;
@@ -538,17 +541,18 @@ header {
       width: auto;
       height: auto; }
     .principal__titulo {
-      top: 35%;
-      font-size: 30px; }
+      top: 5%;
+      left: 10%;
+      font-size: 40px; }
     .principal__titulo--dos {
-      top: 106%;
-      font-size: 20px; }
+      top: 10%;
+      font-size: 25px; }
     .principal__titulo--tres {
-      top: 106%;
-      font-size: 20px; }
+      top: 10%;
+      font-size: 25px; }
     .principal__titulo--cuatro {
-      top: 106%;
-      font-size: 18px; }
+      top: 10%;
+      font-size: 25px; }
   .partidos {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
@@ -590,17 +594,18 @@ header {
     .libertadores__titulo {
       position: relative;
       background-color: transparent;
-      font-size: 25px;
-      top: 4%; }
+      font-size: 40px;
+      top: 1%;
+      left: 20%; }
     .libertadores__titulo--dos {
       position: relative;
       background-color: transparent;
-      font-size: 20px;
+      font-size: 25px;
       top: 4%; }
     .libertadores__titulo--tres {
       position: relative;
       background-color: transparent;
-      font-size: 20px;
+      font-size: 25px;
       top: 4%; }
   .cruces {
     flex-wrap: wrap;

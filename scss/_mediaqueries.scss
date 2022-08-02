@@ -57,28 +57,29 @@
                 height: 280px;
             }
             &__titulo{
+                position: relative;
                 background-color: transparent;
-                position: sticky;
                 top: 5%;
-                font-size: 20px;
+                left: 8%;
+                font-size: 25px;
             }
             &__titulo--dos{
                 background-color: transparent;
-                position: sticky;
-                top: 75%;
-                font-size: 18px;
+                position: relative;
+                top: 10%;
+                font-size: 20px;
             }
             &__titulo--tres{
                 background-color: transparent;
-                position: sticky;
-                top: 85%;
-                font-size: 18px;
+                position: relative;
+                top: 10%;
+                font-size: 20px;
             }
             &__titulo--cuatro{
                 background-color: transparent;
-                position: sticky;
-                top: 133%;
-                font-size: 18px;
+                position: relative;
+                top: 10%;
+                font-size: 20px;
             }
             &__letra{
                 font-size: 13px;
@@ -154,6 +155,7 @@
                 background-color: transparent;
                 font-size: 20px;
                 top: 4%;
+                left: 0%;
             }
             &__titulo--dos{
                 position: relative;
@@ -321,20 +323,21 @@
                     height: auto;
                 }
                 &__titulo{
-                    top: 35%;
-                    font-size: 30px;
+                    top: 5%;
+                    left: 10%;
+                    font-size: 40px;
                 }
                 &__titulo--dos{
-                    top: 106%;
-                    font-size: 20px;
+                    top: 10%;
+                    font-size: 25px;
                 }
                 &__titulo--tres{
-                    top: 106%;
-                    font-size: 20px;
+                    top: 10%;
+                    font-size: 25px;
                 }
                 &__titulo--cuatro{
-                    top: 106%;
-                    font-size: 18px;
+                    top: 10%;
+                    font-size: 25px;
                 }
         }
         .partidos {
@@ -391,19 +394,20 @@
             &__titulo{
                 position: relative;
                 background-color: transparent;
-                font-size: 25px;
-                top: 4%;
+                font-size: 40px;
+                top: 1%;
+                left: 20%;
             }
             &__titulo--dos{
                 position: relative;
                 background-color: transparent;
-                font-size: 20px;
+                font-size: 25px;
                 top: 4%;
             }
             &__titulo--tres{
                 position: relative;
                 background-color: transparent;
-                font-size: 20px;
+                font-size: 25px;
                 top: 4%;
             }
         }
