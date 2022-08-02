@@ -24,6 +24,7 @@ header{
     background-color: rgb(130, 25, 25);
     position: sticky;
     top: 0px;
+    width: auto;
     .header{
         &__imagen--logo{
             width: 120px;
@@ -226,7 +227,7 @@ header{
         position: absolute;
         color: white;
         font-size: 30px;
-        top: 77%;
+        top: 75%;
         background-color: rgb(61, 61, 61);
     }
 }

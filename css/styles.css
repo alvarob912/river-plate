@@ -40,7 +40,8 @@ p {
 header {
   background-color: #821919;
   position: sticky;
-  top: 0px; }
+  top: 0px;
+  width: auto; }
   header .header__imagen--logo {
     width: 120px; }
 
@@ -206,7 +207,7 @@ header {
     position: absolute;
     color: white;
     font-size: 30px;
-    top: 77%;
+    top: 75%;
     background-color: #3d3d3d; }
 
 .cruces {
@@ -324,13 +325,13 @@ header {
       background-position: top; }
     .principal__imagen--primera {
       width: auto;
-      height: 180px; }
+      height: auto; }
     .principal__imagen--baja {
       width: auto;
-      height: 150px; }
+      height: auto; }
     .principal__imagen {
       width: auto;
-      height: 250px; }
+      height: auto; }
     .principal__titulo {
       background-color: transparent;
       position: sticky;
