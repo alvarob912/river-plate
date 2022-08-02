@@ -10,3 +10,12 @@
     background-color: transparent;
     color: white;
 }
+.flex-historia{
+    display: flex; 
+    flex-direction: row;
+}
+
+@mixin flex($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
+}
