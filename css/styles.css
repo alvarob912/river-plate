@@ -224,6 +224,7 @@ header {
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 0.5fr 0.5fr;
   align-items: center;
+  justify-content: center;
   gap: 15px;
   padding: 10px; }
   .fixture__principal {
@@ -254,6 +255,8 @@ header {
     align-items: center;
     border: gray solid 2px;
     padding: 16px; }
+  .fixture__liga {
+    display: flex; }
 
 .fixture__copa {
   display: flex; }
@@ -325,13 +328,13 @@ header {
       background-position: top; }
     .principal__imagen--primera {
       width: auto;
-      height: auto; }
+      height: 250px; }
     .principal__imagen--baja {
       width: auto;
-      height: auto; }
+      height: 220px; }
     .principal__imagen {
       width: auto;
-      height: auto; }
+      height: 280px; }
     .principal__titulo {
       background-color: transparent;
       position: sticky;
@@ -380,7 +383,8 @@ header {
       width: 300px;
       height: 150px; }
     .secundario__texto {
-      font-size: 10px; }
+      font-size: 10px;
+      padding: 15px; }
     .secundario__titulo {
       font-size: 25px; }
   .footer__condiciones {
@@ -421,15 +425,21 @@ header {
       top: 4%; }
   .cruces {
     flex-wrap: wrap;
-    align-items: center; }
+    justify-content: center; }
     .cruces__imagen {
-      padding: 10px;
-      width: 300px;
-      height: 200px; }
+      width: 350px;
+      height: 310px;
+      padding: 5px; }
+    .cruces__texto {
+      padding: 0px; }
   /* FIXTURE */
   .fixture {
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; }
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    padding: 0px; }
     .fixture__principal {
       grid-column: 1/2;
       grid-row: 1/2; }
@@ -446,8 +456,14 @@ header {
       grid-column: 1/2;
       grid-row: 5/6; }
     .fixture__principal {
-      width: 330px;
+      width: 98%;
       height: 300px; }
+    .fixture__liga {
+      justify-content: center;
+      align-items: center; }
+    .fixture_borde {
+      border: gray solid 2px;
+      padding: 0px; }
   .fixture__copa {
     flex-wrap: wrap;
     align-items: center;
@@ -517,7 +533,7 @@ header {
       width: auto;
       height: auto; }
     .principal__titulo {
-      top: 45%;
+      top: 35%;
       font-size: 30px; }
     .principal__titulo--dos {
       top: 106%;
@@ -578,13 +594,17 @@ header {
       font-size: 20px;
       top: 4%; }
   .cruces {
-    display: block; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .cruces__imagen {
       width: 600px;
       height: 400px; }
+    .cruces__texto {
+      padding: 15px;
+      font-size: 18px; }
   /* FIXTURE */
   .fixture {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
@@ -609,8 +629,11 @@ header {
       border: gray solid 2px;
       padding: 0px; }
     .fixture__principal {
-      width: 600px;
+      width: auto;
       height: 400px; }
+    .fixture__liga {
+      justify-content: center;
+      align-items: center; }
   .fixture__copa {
     flex-wrap: wrap;
     justify-content: center;

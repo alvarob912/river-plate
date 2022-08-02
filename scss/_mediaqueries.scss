@@ -46,15 +46,15 @@
             
             &__imagen--primera{
                 width: auto;
-                height: auto;
+                height: 250px;
             }
             &__imagen--baja{
                 width: auto;
-                height: auto;
+                height: 220px;
             }
             &__imagen{
                 width: auto;
-                height: auto;
+                height: 280px;
             }
             &__titulo{
                 background-color: transparent;
@@ -110,12 +110,13 @@
     .secundario {
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         &__imagen {
             width: 300px;
-            height: 150px; }
+            height: 150px;}
         &__texto {
-            font-size: 10px; }
+            font-size: 10px;
+            padding: 15px; }
         &__titulo {
             font-size: 25px; }
         }
@@ -170,18 +171,24 @@
 
     .cruces{
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
         &__imagen{
-            padding: 10px;
-            width: 300px;
-            height: 200px;
+            width: 350px;
+            height: 310px;
+            padding: 5px;}
+        &__texto{
+            padding: 0px;
         }
     }
     
     /* FIXTURE */
     .fixture{
+        justify-content: center;
+        align-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 10px;
+        padding: 0px;
         &__principal{
             grid-column: 1/2;
             grid-row: 1/2;
@@ -203,9 +210,16 @@
             grid-row: 5/6;
         }
         &__principal{
-            width: 330px;
+            width: 98%;
             height: 300px;
+        }        
+        &__liga{
+            justify-content: center;
+            align-items: center;
         }
+        &_borde{
+            border: gray solid 2px;
+            padding: 0px;}
     }
 
     .fixture__copa{
@@ -307,7 +321,7 @@
                     height: auto;
                 }
                 &__titulo{
-                    top: 45%;
+                    top: 35%;
                     font-size: 30px;
                 }
                 &__titulo--dos{
@@ -389,15 +403,19 @@
             }
         }
         .cruces{
-            display: block;
+            flex-wrap: wrap;
+            justify-content: center;
             &__imagen{
                 width: 600px;
-                height: 400px;
-            }
+                height: 400px;}
+            &__texto{
+                padding: 15px;
+                font-size: 18px;
+                }
         }
         /* FIXTURE */
         .fixture{
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0.5fr 0.5fr;
             grid-template-rows: 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
@@ -427,8 +445,12 @@
                 border: gray solid 2px;
                 padding: 0px;}
             &__principal{
-                width: 600px;
+                width: auto;
                 height: 400px;
+            }
+            &__liga{
+                justify-content: center;
+                align-items: center;
             }
         }
         .fixture__copa{

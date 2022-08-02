@@ -249,6 +249,7 @@ header{
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     padding: 10px;
         &__principal{
@@ -287,6 +288,8 @@ header{
             border: gray solid 2px;
             padding: 16px;
         }
+        &__liga{
+            display: flex;}
 
 }
 
