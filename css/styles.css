@@ -362,7 +362,7 @@ header {
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
     justify-content: center;
     align-items: center;
-    margin: 0px; }
+    margin: 5px; }
     .partidos__imagen--uno {
       grid-column: 1/2;
       grid-row: 1/2; }
@@ -546,7 +546,8 @@ header {
       font-size: 18px; }
   .partidos {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr; }
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    margin: 10px; }
     .partidos__imagen--uno {
       grid-column: 1/2;
       grid-row: 1/2; }
@@ -556,6 +557,9 @@ header {
     .partidos__imagen--tres {
       grid-column: 1/2;
       grid-row: 3/4; }
+    .partidos__borde {
+      border: gray solid 2px;
+      padding: 5px; }
   .secundario {
     flex-wrap: wrap;
     align-items: center;
@@ -608,7 +612,8 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    column-gap: 3px;
+    row-gap: 0px;
     padding: 0px; }
     .fixture__principal {
       grid-column: 1/3;
@@ -626,20 +631,22 @@ header {
       grid-column: 2/3;
       grid-row: 3/4; }
     .fixture_borde {
-      border: gray solid 2px;
+      border: gray solid 1px;
       padding: 0px; }
     .fixture__principal {
-      width: auto;
+      width: 98%;
       height: 400px; }
     .fixture__liga {
       justify-content: center;
       align-items: center; }
+    .fixture__imagen {
+      margin: 10px; }
   .fixture__copa {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
     .fixture__copa--imagen {
-      width: 600px;
+      width: 570px;
       padding: 0px; }
     .fixture__copa--texto {
       padding: 0px; }
