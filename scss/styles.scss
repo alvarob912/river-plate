@@ -247,7 +247,9 @@ header{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
+    align-items: center;
     gap: 15px;
+    padding: 10px;
         &__principal{
             grid-column: 2/3;
             grid-row: 1/3;
