@@ -33,7 +33,8 @@ header{
 }
 .principal{
     display: grid;
-    height: 100vh;
+    height: auto;
+    width: auto;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
     row-gap: 15px;
@@ -74,31 +75,31 @@ header{
         }
         
         &__titulo{
-            position: absolute;
-            background-color: rgb(61, 61, 61);
+            position: relative;
+            background-color: transparent;
             color: white;
-            top: 54%;
+            top: 5%;
             font-size: 45px;
         }
         &__titulo--dos{
-            position: absolute;
-            background-color: rgb(61, 61, 61);
+            position: relative;
+            background-color: transparent;
             color: white;
-            top: 98%;
+            top: 2%;
             font-size: 40px;
         }
         &__titulo--tres{
-            position: absolute;
-            background-color: rgb(61, 61, 61);
+            position: relative;
+            background-color: transparent;
             color: white;
-            top: 98%;
+            top: 70%;
             font-size: 40px;
         }
         &__titulo--cuatro{
-            position: absolute;
-            background-color: rgb(61, 61, 61);
+            position: relative;
+            background-color: transparent;
             color: white;
-            top: 98%;
+            top: 70%;
             font-size: 40px;
         }
         &__letra{
@@ -109,16 +110,18 @@ header{
             height: 500px;
         }
         &__imagen--primera{
-            width: 700px;
+            width: auto;
             height: 400px;
         }
         &__imagen--baja{
-            width: 591px;
+            width: auto;
             height: 400px;
         }
 }
 .partidos {
     display: grid;
+    width: auto;
+    height: auto;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 1fr;
     gap: 20px;
@@ -152,7 +155,7 @@ header{
         }
     }
     &__borde{
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -246,7 +249,9 @@ header{
 /* FIXTURE */
 .fixture{
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
+    width: auto;
+    height: auto;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.5fr;
     align-items: center;
     justify-content: center;
@@ -273,7 +278,7 @@ header{
             grid-row: 2/3;
         }
         &__principal{
-            width: 950px;
+            width: auto;
             height: 600px;
         }
         &__imagen{
