@@ -1,5 +1,5 @@
 @import "footer";
-
+@import "operators";
 *{
     margin: 0px;
     padding: 0px;
@@ -44,9 +44,7 @@ header{
         .enzo{
             grid-area: enzo;
             background-image: url("../resources/enzofernandez.jfif");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            @extend .background-centrado;
         }
         .texto{
             grid-area: texto;
@@ -55,50 +53,36 @@ header{
         .julian{
             grid-area: julian;
             background-image: url("../resources/julian.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            @extend .background-centrado;
         }
         .borja{
             grid-area: borja;
             background-image: url("../resources/borja.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            @extend .background-centrado;
         }
         .suarez{
             grid-area: suarez;
             background-image: url("../resources/matias-suarez.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            @extend .background-centrado;
         }
         
         &__titulo{
-            position: relative;
-            background-color: transparent;
-            color: white;
+            @extend .titulos-normales;
             top: 5%;
             font-size: 45px;
         }
         &__titulo--dos{
-            position: relative;
-            background-color: transparent;
-            color: white;
+            @extend .titulos-normales;
             top: 2%;
             font-size: 40px;
         }
         &__titulo--tres{
-            position: relative;
-            background-color: transparent;
-            color: white;
+            @extend .titulos-normales;
             top: 70%;
             font-size: 40px;
         }
         &__titulo--cuatro{
-            position: relative;
-            background-color: transparent;
-            color: white;
+            @extend .titulos-normales;
             top: 70%;
             font-size: 40px;
         }
@@ -190,18 +174,14 @@ header{
         background-repeat: no-repeat;
     }
     .mano-suarez{
+        @extend .background-centrado;
         grid-area: mano-suarez;
         background-image: url("../resources/mano-suarez.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     .arbitro{
+        @extend .background-centrado;
         grid-area: arbitro;
         background-image: url("../resources/tobar.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     &__imagen{
         width: auto;
@@ -212,24 +192,18 @@ header{
         height: auto;
     }
     &__titulo{
-        position: relative;
-        background-color: transparent;
-        color: white;
+        @extend .titulos-normales;
         font-size: 60px;
         top: 1%;
         left: 10%;
     }
     &__titulo--dos{
-        position: relative;
-        background-color: transparent;
-        color: white;
+        @extend .titulos-normales;;
         font-size: 30px;
         top: 5%;
     }
     &__titulo--tres{
-        position: relative;
-        background-color: transparent;
-        color: white;
+        @extend .titulos-normales;
         font-size: 30px;
         top: 5%;
     }

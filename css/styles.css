@@ -17,6 +17,17 @@
 .footer__imagen--logo {
   width: 120px; }
 
+/* EXTEND */
+.background-centrado, .principal .enzo, .principal .julian, .principal .borja, .principal .suarez, .libertadores .mano-suarez, .libertadores .arbitro {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.titulos-normales, .principal__titulo, .principal__titulo--dos, .principal__titulo--tres, .principal__titulo--cuatro, .libertadores__titulo, .libertadores__titulo--dos, .libertadores__titulo--tres {
+  position: relative;
+  background-color: transparent;
+  color: white; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -56,52 +67,28 @@ header {
   grid-template-areas: "enzo texto texto" "julian borja suarez"; }
   .principal .enzo {
     grid-area: enzo;
-    background-image: url("../resources/enzofernandez.jfif");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/enzofernandez.jfif"); }
   .principal .texto {
     grid-area: texto; }
   .principal .julian {
     grid-area: julian;
-    background-image: url("../resources/julian.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/julian.jpg"); }
   .principal .borja {
     grid-area: borja;
-    background-image: url("../resources/borja.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/borja.jpg"); }
   .principal .suarez {
     grid-area: suarez;
-    background-image: url("../resources/matias-suarez.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/matias-suarez.jpg"); }
   .principal__titulo {
-    position: relative;
-    background-color: transparent;
-    color: white;
     top: 5%;
     font-size: 45px; }
   .principal__titulo--dos {
-    position: relative;
-    background-color: transparent;
-    color: white;
     top: 2%;
     font-size: 40px; }
   .principal__titulo--tres {
-    position: relative;
-    background-color: transparent;
-    color: white;
     top: 70%;
     font-size: 40px; }
   .principal__titulo--cuatro {
-    position: relative;
-    background-color: transparent;
-    color: white;
     top: 70%;
     font-size: 40px; }
   .principal__letra {
@@ -177,16 +164,10 @@ header {
     background-repeat: no-repeat; }
   .libertadores .mano-suarez {
     grid-area: mano-suarez;
-    background-image: url("../resources/mano-suarez.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/mano-suarez.jpg"); }
   .libertadores .arbitro {
     grid-area: arbitro;
-    background-image: url("../resources/tobar.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/tobar.jpg"); }
   .libertadores__imagen {
     width: auto;
     height: 600px; }
@@ -194,22 +175,13 @@ header {
     width: auto;
     height: auto; }
   .libertadores__titulo {
-    position: relative;
-    background-color: transparent;
-    color: white;
     font-size: 60px;
     top: 1%;
     left: 10%; }
   .libertadores__titulo--dos {
-    position: relative;
-    background-color: transparent;
-    color: white;
     font-size: 30px;
     top: 5%; }
   .libertadores__titulo--tres {
-    position: relative;
-    background-color: transparent;
-    color: white;
     font-size: 30px;
     top: 5%; }
 
