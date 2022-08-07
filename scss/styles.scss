@@ -6,6 +6,7 @@
 }
 h1{
     font-family: 'Alfa Slab One', cursive;
+    padding: 5px;
 }
 h2{
     font-family: 'Pathway Gothic One', sans-serif;
@@ -39,13 +40,14 @@ header{
     grid-template-rows: 0.5fr 1fr;
     row-gap: 15px;
     column-gap: 10px;
+    padding: 10px;
     grid-template-areas: "enzo texto texto"
                         "julian borja suarez";
         .enzo{
             grid-area: enzo;
             background-image: url("../resources/enzofernandez.jfif");
             @extend .background-centrado;
-        }
+            }
         .texto{
             grid-area: texto;
             
@@ -163,6 +165,7 @@ header{
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "river mano-suarez"
                         "river arbitro";
+    padding: 10px;
     column-gap: 10px;
     row-gap: 10px;
     .river{
@@ -267,8 +270,8 @@ header{
         &__liga{
             display: flex;
             @include flex(center,center);}
-
-}
+            
+        }          
 
 .fixture__copa{
     display: flex;
@@ -280,7 +283,10 @@ header{
         padding: 80px;
     }
 }
-
+.formulario__titulo{
+    display: flex;
+    justify-content: center;
+}
 /* PLANTEL */
 .plantel{
     display: flex;
@@ -315,4 +321,13 @@ header{
         padding: 10px;
     }
 }
+.accordion-button:not(.collapsed){
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
+}
+.accordion-button:focus{
+    box-shadow: inherit;
+}
+
 @import "mediaqueries";

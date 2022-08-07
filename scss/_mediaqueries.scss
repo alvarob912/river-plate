@@ -23,9 +23,9 @@
     }
     .principal{
         height: auto;
-        gap: 10px;
+        row-gap:  10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-areas: "enzo" 
                             "texto" 
                             "julian" 
@@ -46,11 +46,11 @@
             
             &__imagen--primera{
                 width: auto;
-                height: 250px;
+                height: auto;
             }
             &__imagen--baja{
                 width: auto;
-                height: 220px;
+                height: auto;
             }
             &__imagen{
                 width: auto;
@@ -274,6 +274,9 @@
         }
     }
     .footer{
+        &__imagen{
+            justify-content: center;
+        }
         &__imagen--redes{
             width: 12px;
         }
@@ -281,7 +284,7 @@
             font-size: 10px;
         }
         &__condiciones{
-            flex-wrap: wrap;
+            flex-direction: column-reverse;
         }
         &__letra{
             font-size: 11px;
@@ -304,7 +307,6 @@
             }
     }
         .principal{
-            width: auto;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr 0.5fr 1fr;
             grid-template-areas: "enzo enzo enzo" 
@@ -369,7 +371,10 @@
             }
         /* LIBERTADORES */  
         .libertadores{
+            width: auto;
             height: 50vh;
+            margin: 0px;
+            padding: 0px;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr ;
             grid-template-areas: "river river" 

@@ -37,7 +37,8 @@
   padding: 0px; }
 
 h1 {
-  font-family: 'Alfa Slab One', cursive; }
+  font-family: 'Alfa Slab One', cursive;
+  padding: 5px; }
 
 h2 {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -68,6 +69,7 @@ header {
   grid-template-rows: 0.5fr 1fr;
   row-gap: 15px;
   column-gap: 10px;
+  padding: 10px;
   grid-template-areas: "enzo texto texto" "julian borja suarez"; }
   .principal .enzo {
     grid-area: enzo;
@@ -158,6 +160,7 @@ header {
   grid-template-columns: 1fr 0.5fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "river mano-suarez" "river arbitro";
+  padding: 10px;
   column-gap: 10px;
   row-gap: 10px; }
   .libertadores .river {
@@ -249,6 +252,10 @@ header {
   .fixture__copa--texto {
     padding: 80px; }
 
+.formulario__titulo {
+  display: flex;
+  justify-content: center; }
+
 /* PLANTEL */
 .plantel {
   display: flex;
@@ -270,6 +277,14 @@ header {
     height: 400px;
     padding: 10px; }
 
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: white;
+  color: #0c0c0c; }
+
+.accordion-button:focus {
+  box-shadow: inherit; }
+
 /*MEDIA DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
   header {
@@ -286,9 +301,9 @@ header {
     height: auto; }
   .principal {
     height: auto;
-    gap: 10px;
+    row-gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas: "enzo"  "texto"  "julian"  "borja"  "suarez"; }
     .principal .enzo {
       background-position: top; }
@@ -300,10 +315,10 @@ header {
       background-position: top; }
     .principal__imagen--primera {
       width: auto;
-      height: 250px; }
+      height: auto; }
     .principal__imagen--baja {
       width: auto;
-      height: 220px; }
+      height: auto; }
     .principal__imagen {
       width: auto;
       height: 280px; }
@@ -473,12 +488,14 @@ header {
     .historia__tamano {
       width: 320px;
       height: 300px; }
+  .footer__imagen {
+    justify-content: center; }
   .footer__imagen--redes {
     width: 12px; }
   .footer__letra {
     font-size: 10px; }
   .footer__condiciones {
-    flex-wrap: wrap; }
+    flex-direction: column-reverse; }
   .footer__letra {
     font-size: 11px; }
   .footer__imagen--logo {
@@ -493,7 +510,6 @@ header {
     header .header__imagen--logo {
       width: 100px; }
   .principal {
-    width: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.5fr 1fr;
     grid-template-areas: "enzo enzo enzo"  "texto texto texto" "julian borja suarez"; }
@@ -541,7 +557,10 @@ header {
     justify-content: center; }
   /* LIBERTADORES */
   .libertadores {
+    width: auto;
     height: 50vh;
+    margin: 0px;
+    padding: 0px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "river river"  "mano-suarez arbitro"; }
