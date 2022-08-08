@@ -112,7 +112,6 @@ header{
     grid-template-rows: 1fr;
     gap: 20px;
     margin: 30px;
-    
     &__tamano{
         width: 300px;
     }
@@ -144,18 +143,25 @@ header{
     display: flex;
     flex-direction: column;
     @include flex(center,center);
-    border: gray solid 2px;
+    border: rgb(1, 1, 1) solid 2px;
     padding: 16px;
     }
+    &__letra{
+        text-shadow: 2px 2px 1px rgb(255, 255, 255);
+    }
 }   
+.fondo{
+    background: linear-gradient(white, gray, white);
+}
 .secundario {
     display: flex; 
+    padding: 10px;
     &__titulo {
         color: black;
         font-size: 40px; }
     &__imagen {
-        width: 600px;
-        height: 400px; }
+        width: 650px;
+        height: 470px; }
     }
 
 /* LIBERTADORES */
@@ -213,12 +219,12 @@ header{
 
 .cruces{
     display: flex;
+    padding: 10px;
     &__imagen{
-        padding: 50px;
         width: 800px;
     }
     &__texto{
-        padding: 50px;
+        font-size: 17px;
     }
 }
 
@@ -275,12 +281,12 @@ header{
 
 .fixture__copa{
     display: flex;
+    padding: 10px;
     &--imagen{
         width: 700px;
-        padding: 80px;
     }
     &--texto{
-        padding: 80px;
+        font-size: 17px;
     }
 }
 .formulario__titulo{
@@ -323,11 +329,13 @@ header{
 }
 .accordion-button:not(.collapsed){
     color: inherit;
-    background-color: rgb(255, 255, 255);
-    color: rgb(12, 12, 12);
+    background-color: rgb(1, 1, 1);
+    color: rgb(255, 255, 255);
 }
 .accordion-button:focus{
     box-shadow: inherit;
 }
-
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0%) invert(100%)
+}
 @import "mediaqueries";

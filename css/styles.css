@@ -26,7 +26,8 @@
 .titulos-normales, .principal__titulo, .principal__titulo--dos, .principal__titulo--tres, .principal__titulo--cuatro, .libertadores__titulo, .libertadores__titulo--dos, .libertadores__titulo--tres {
   position: relative;
   background-color: transparent;
-  color: white; }
+  color: white;
+  text-shadow: 5px 4px 2px black; }
 
 .flex-historia, .historia__uno, .historia__dos, .historia__tres, .historia__cuatro {
   display: flex;
@@ -142,17 +143,23 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: gray solid 2px;
+    border: #010101 solid 2px;
     padding: 16px; }
+  .partidos__letra {
+    text-shadow: 2px 2px 1px white; }
+
+.fondo {
+  background: linear-gradient(white, gray, white); }
 
 .secundario {
-  display: flex; }
+  display: flex;
+  padding: 10px; }
   .secundario__titulo {
     color: black;
     font-size: 40px; }
   .secundario__imagen {
-    width: 600px;
-    height: 400px; }
+    width: 650px;
+    height: 470px; }
 
 /* LIBERTADORES */
 .libertadores {
@@ -193,12 +200,12 @@ header {
     top: 5%; }
 
 .cruces {
-  display: flex; }
+  display: flex;
+  padding: 10px; }
   .cruces__imagen {
-    padding: 50px;
     width: 800px; }
   .cruces__texto {
-    padding: 50px; }
+    font-size: 17px; }
 
 /* FIXTURE */
 .fixture {
@@ -245,12 +252,12 @@ header {
     align-items: center; }
 
 .fixture__copa {
-  display: flex; }
+  display: flex;
+  padding: 10px; }
   .fixture__copa--imagen {
-    width: 700px;
-    padding: 80px; }
+    width: 700px; }
   .fixture__copa--texto {
-    padding: 80px; }
+    font-size: 17px; }
 
 .formulario__titulo {
   display: flex;
@@ -279,11 +286,14 @@ header {
 
 .accordion-button:not(.collapsed) {
   color: inherit;
-  background-color: white;
-  color: #0c0c0c; }
+  background-color: #010101;
+  color: white; }
 
 .accordion-button:focus {
   box-shadow: inherit; }
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(100%); }
 
 /*MEDIA DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -344,7 +354,8 @@ header {
       top: 10%;
       font-size: 20px; }
     .principal__letra {
-      font-size: 13px; }
+      font-size: 13px;
+      padding: 10px; }
   .partidos {
     grid-template-columns: 0.5fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
@@ -366,13 +377,13 @@ header {
   .secundario {
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 10px; }
     .secundario__imagen {
-      width: 300px;
-      height: 150px; }
+      width: 350px;
+      height: 300px; }
     .secundario__texto {
-      font-size: 10px;
-      padding: 15px; }
+      font-size: 13px; }
     .secundario__titulo {
       font-size: 25px; }
   .footer__condiciones {
@@ -420,7 +431,7 @@ header {
       height: 310px;
       padding: 5px; }
     .cruces__texto {
-      padding: 0px; }
+      padding: 15px; }
   /* FIXTURE */
   .fixture {
     justify-content: center;
@@ -461,7 +472,7 @@ header {
       width: 320px;
       padding: 0px; }
     .fixture__copa--texto {
-      padding: 0px; }
+      padding: 15px; }
   /* PLANTEL */
   .plantel {
     flex-wrap: wrap;
@@ -472,7 +483,7 @@ header {
       height: auto; }
   /* HISTORIA */
   .historia {
-    font-size: 14px; }
+    font-size: 13px; }
     .historia__uno {
       flex-wrap: wrap;
       justify-content: center; }
@@ -535,6 +546,9 @@ header {
     .principal__titulo--cuatro {
       top: 10%;
       font-size: 25px; }
+    .principal__letra {
+      font-size: 16px;
+      padding: 15px; }
   .partidos {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
@@ -555,6 +569,9 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
+    .secundario__imagen {
+      width: 500px;
+      height: 400px; }
   /* LIBERTADORES */
   .libertadores {
     width: auto;

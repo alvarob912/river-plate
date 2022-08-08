@@ -83,6 +83,7 @@
             }
             &__letra{
                 font-size: 13px;
+                padding: 10px;
             }
     }
     .partidos {
@@ -112,12 +113,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
         &__imagen {
-            width: 300px;
-            height: 150px;}
+            width: 350px;
+            height: 300px;}
         &__texto {
-            font-size: 10px;
-            padding: 15px; }
+            font-size: 13px;
+        }
         &__titulo {
             font-size: 25px; }
         }
@@ -179,7 +181,7 @@
             height: 310px;
             padding: 5px;}
         &__texto{
-            padding: 0px;
+            padding: 15px;
         }
     }
     
@@ -233,7 +235,7 @@
             padding: 0px;
         }
         &--texto{
-            padding: 0px;
+            padding: 15px;
         }
         
     }
@@ -251,7 +253,7 @@
     }
     /* HISTORIA */
     .historia{
-        font-size: 14px;
+        font-size: 13px;
         &__uno{
             flex-wrap: wrap;
             justify-content: center;
@@ -341,6 +343,10 @@
                     top: 10%;
                     font-size: 25px;
                 }
+                &__letra{
+                    font-size: 16px;
+                    padding: 15px;
+                }
         }
         .partidos {
             grid-template-columns: 1fr;
@@ -368,6 +374,9 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            &__imagen {
+                width: 500px;
+                height: 400px;}
             }
         /* LIBERTADORES */  
         .libertadores{
