@@ -26,6 +26,7 @@ header{
     position: sticky;
     top: 0%;
     width: auto;
+    z-index: 1;
     .header{
         &__imagen--logo{
             width: 120px;
@@ -224,7 +225,8 @@ header{
         width: 800px;
     }
     &__texto{
-        font-size: 17px;
+        flex-wrap: wrap;
+        font-size: 18px;
     }
 }
 
@@ -281,12 +283,15 @@ header{
 
 .fixture__copa{
     display: flex;
+    flex-direction: row;
     padding: 10px;
     &--imagen{
         width: 700px;
     }
     &--texto{
-        font-size: 17px;
+        padding: 5px;
+        flex-wrap: wrap;
+        font-size: 18px;
     }
 }
 .formulario__titulo{
@@ -308,7 +313,7 @@ header{
 }
 /* HISTORIA */
 .historia{
-    font-size: 15px;
+    font-size: 18px;
     &__uno{
         @extend .flex-historia;
     }

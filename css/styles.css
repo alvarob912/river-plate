@@ -60,7 +60,8 @@ header {
   background-color: #821919;
   position: sticky;
   top: 0%;
-  width: auto; }
+  width: auto;
+  z-index: 1; }
   header .header__imagen--logo {
     width: 120px; }
 
@@ -207,7 +208,8 @@ header {
   .cruces__imagen {
     width: 800px; }
   .cruces__texto {
-    font-size: 17px; }
+    flex-wrap: wrap;
+    font-size: 18px; }
 
 /* FIXTURE */
 .fixture {
@@ -255,11 +257,14 @@ header {
 
 .fixture__copa {
   display: flex;
+  flex-direction: row;
   padding: 10px; }
   .fixture__copa--imagen {
     width: 700px; }
   .fixture__copa--texto {
-    font-size: 17px; }
+    padding: 5px;
+    flex-wrap: wrap;
+    font-size: 18px; }
 
 .formulario__titulo {
   display: flex;
@@ -280,7 +285,7 @@ header {
 
 /* HISTORIA */
 .historia {
-  font-size: 15px; }
+  font-size: 18px; }
   .historia__tamano {
     width: 600px;
     height: 400px;
@@ -356,7 +361,7 @@ header {
       top: 10%;
       font-size: 20px; }
     .principal__letra {
-      font-size: 13px;
+      font-size: 14px;
       padding: 10px; }
   .partidos {
     grid-template-columns: 0.5fr;
@@ -433,7 +438,8 @@ header {
       height: 310px;
       padding: 5px; }
     .cruces__texto {
-      padding: 15px; }
+      padding: 15px;
+      font-size: 14px; }
   /* FIXTURE */
   .fixture {
     justify-content: center;
@@ -474,6 +480,7 @@ header {
       width: 320px;
       padding: 0px; }
     .fixture__copa--texto {
+      font-size: 14px;
       padding: 15px; }
   /* PLANTEL */
   .plantel {
@@ -485,7 +492,7 @@ header {
       height: auto; }
   /* HISTORIA */
   .historia {
-    font-size: 13px; }
+    font-size: 14px; }
     .historia__uno {
       flex-wrap: wrap;
       justify-content: center; }
@@ -554,7 +561,7 @@ header {
       top: 10%;
       font-size: 25px; }
     .principal__letra {
-      font-size: 16px;
+      font-size: 17px;
       padding: 15px; }
   .partidos {
     grid-template-columns: 1fr;
@@ -624,7 +631,7 @@ header {
       height: 400px; }
     .cruces__texto {
       padding: 15px;
-      font-size: 16px; }
+      font-size: 17px; }
   /* FIXTURE */
   .fixture {
     grid-template-columns: 0.5fr 0.5fr;
@@ -668,7 +675,8 @@ header {
       width: 570px;
       padding: 0px; }
     .fixture__copa--texto {
-      padding: 15px; }
+      padding: 15px;
+      font-size: 17px; }
   /* PLANTEL */
   .plantel {
     flex-wrap: wrap;
@@ -679,7 +687,7 @@ header {
       height: auto; }
   /* HISTORIA */
   .historia {
-    font-size: 13px; }
+    font-size: 17px; }
     .historia__uno {
       justify-content: center;
       flex-wrap: wrap; }
